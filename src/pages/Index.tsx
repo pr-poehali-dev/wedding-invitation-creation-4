@@ -57,10 +57,10 @@ const Index = () => {
           <div className="bg-wedding-white/80 backdrop-blur-sm rounded-lg p-8 max-w-md mx-auto border border-wedding-gold/30">
             <Icon name="Calendar" size={32} className="mx-auto text-wedding-gold mb-4" />
             <p className="font-cormorant text-3xl font-semibold text-wedding-charcoal mb-2">
-              15 Июня 2024
+              17 Октября 2025
             </p>
             <p className="font-open-sans text-wedding-charcoal">
-              Суббота, 16:00
+              Пятница, 14:30
             </p>
           </div>
         </div>
@@ -79,11 +79,11 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-8">
               {[
-                { time: "16:00", event: "Церемония бракосочетания", description: "Торжественная регистрация брака" },
-                { time: "17:00", event: "Фотосессия", description: "Свадебная фотосессия с гостями" },
-                { time: "18:30", event: "Праздничный банкет", description: "Ужин, тосты и поздравления" },
-                { time: "21:00", event: "Первый танец", description: "Танцевальная программа" },
-                { time: "22:00", event: "Развлекательная программа", description: "Конкурсы и игры для гостей" }
+                { time: "14:30", event: "Церемония бракосочетания", description: "Торжественная регистрация брака" },
+                { time: "15:30", event: "Фотосессия", description: "Свадебная фотосессия с гостями" },
+                { time: "17:00", event: "Праздничный банкет", description: "Ужин, тосты и поздравления" },
+                { time: "19:30", event: "Первый танец", description: "Танцевальная программа" },
+                { time: "20:30", event: "Развлекательная программа", description: "Конкурсы и игры для гостей" }
               ].map((item, index) => (
                 <Card key={index} className="bg-wedding-cream/50 border-wedding-gold/30 hover:scale-105 transition-transform duration-300">
                   <CardContent className="p-6">
@@ -133,7 +133,7 @@ const Index = () => {
               <div className="space-y-3 text-wedding-charcoal font-open-sans">
                 <div className="flex items-center space-x-3">
                   <Icon name="MapPin" size={20} className="text-wedding-gold" />
-                  <span>ул. Цветочная, 25, Москва</span>
+                  <span>ул. Сухэ-Батора, 13</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Phone" size={20} className="text-wedding-gold" />
@@ -265,7 +265,7 @@ const Index = () => {
             Диана & Владислав
           </p>
           <p className="font-open-sans text-wedding-white/70 text-sm">
-            15 Июня 2024 • С любовью для наших дорогих гостей
+            17 Октября 2025 • С любовью для наших дорогих гостей
           </p>
         </div>
       </footer>
