@@ -42,7 +42,7 @@ const Index = () => {
           </div>
           
           <h1 className="font-cormorant text-6xl md:text-8xl font-bold text-wedding-charcoal mb-6">
-            Анна & Михаил
+            Диана & Владислав
           </h1>
           
           <div className="w-32 h-px bg-wedding-gold mx-auto mb-6"></div>
@@ -219,7 +219,7 @@ const Index = () => {
                   </div>
                   <div className="flex items-center justify-center space-x-3">
                     <Icon name="Mail" size={16} className="text-wedding-gold" />
-                    <span>anna@example.com</span>
+                    <span>diana@example.com</span>
                   </div>
                 </div>
               </CardContent>
@@ -238,7 +238,7 @@ const Index = () => {
                   </div>
                   <div className="flex items-center justify-center space-x-3">
                     <Icon name="Mail" size={16} className="text-wedding-gold" />
-                    <span>mikhail@example.com</span>
+                    <span>vladislav@example.com</span>
                   </div>
                 </div>
               </CardContent>
@@ -262,7 +262,7 @@ const Index = () => {
         <div className="container mx-auto px-6 text-center">
           <Icon name="Heart" size={24} className="mx-auto text-wedding-gold mb-4" />
           <p className="font-cormorant text-xl text-wedding-white mb-2">
-            Анна & Михаил
+            Диана & Владислав
           </p>
           <p className="font-open-sans text-wedding-white/70 text-sm">
             15 Июня 2024 • С любовью для наших дорогих гостей
