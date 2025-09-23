@@ -128,7 +128,7 @@ const Index = () => {
             </div>
             <div>
               <h3 className="font-cormorant text-3xl font-semibold text-wedding-charcoal mb-4">
-                Ресторан "Золотая роза"
+                Ресторан "Лотос"
               </h3>
               <div className="space-y-3 text-wedding-charcoal font-open-sans">
                 <div className="flex items-center space-x-3">
