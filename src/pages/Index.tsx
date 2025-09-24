@@ -80,9 +80,9 @@ const Index = () => {
             <div className="space-y-8">
               {[
                 { time: "14:30", event: "Церемония бракосочетания", description: "Торжественная регистрация брака" },
-                { time: "15:30", event: "Фотосессия", description: "Свадебная фотосессия с гостями" },
+
                 { time: "17:00", event: "Праздничный банкет", description: "Ужин, тосты и поздравления" },
-                { time: "19:30", event: "Первый танец", description: "Танцевальная программа" },
+
                 { time: "20:30", event: "Развлекательная программа", description: "Конкурсы и игры для гостей" }
               ].map((item, index) => (
                 <Card key={index} className="bg-wedding-cream/50 border-wedding-gold/30 hover:scale-105 transition-transform duration-300">
@@ -121,7 +121,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="/img/3d3068c9-0320-4386-ad93-09cbb6519fd9.jpg" 
+                src="https://cdn.poehali.dev/files/560bb763-0e9d-41da-a31f-02d5545a4557.jpg" 
                 alt="Wedding venue" 
                 className="w-full h-64 object-cover rounded-lg shadow-lg"
               />
