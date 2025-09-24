@@ -42,7 +42,7 @@ const Index = () => {
           </div>
           
           <h1 className="font-cormorant text-6xl md:text-8xl font-bold text-wedding-charcoal mb-6">
-            Диана & Владислав
+            Владислав & Диана
           </h1>
           
           <div className="w-32 h-px bg-wedding-gold mx-auto mb-6"></div>
@@ -65,7 +65,7 @@ const Index = () => {
             <div className="border-t border-wedding-gold/20 pt-4">
               <Icon name="MapPin" size={20} className="mx-auto text-wedding-gold mb-2" />
               <p className="font-open-sans text-sm text-wedding-charcoal/90">
-                Роспись: ул. Сухэ-Батора, 13
+                Регистрация брака г. Барнаул ул. Сухэ-Батора, 13
               </p>
             </div>
           </div>
@@ -87,9 +87,7 @@ const Index = () => {
               {[
                 { time: "14:30", event: "Церемония бракосочетания", description: "Торжественная регистрация брака" },
 
-                { time: "17:00", event: "Праздничный банкет", description: "Ужин, тосты и поздравления" },
-
-                { time: "20:30", event: "Развлекательная программа", description: "Конкурсы и игры для гостей" }
+                { time: "15:30", event: "Праздничный банкет", description: "Ужин, тосты и поздравления" }
               ].map((item, index) => (
                 <Card key={index} className="bg-wedding-cream/50 border-wedding-gold/30 hover:scale-105 transition-transform duration-300">
                   <CardContent className="p-6">
@@ -157,7 +155,8 @@ const Index = () => {
                   <h3 className="font-cormorant text-2xl font-semibold text-wedding-charcoal">
                     Ресторан "Лотос"
                   </h3>
-                  <p className="font-open-sans text-sm text-wedding-charcoal/70">17:00 - Праздничный банкет</p>
+                  <p className="font-open-sans text-sm text-wedding-charcoal/70">15:30 - Праздничный банкет</p>
+                  <p className="font-open-sans text-xs text-wedding-charcoal/60 mt-1">Развлекательная программа, конкурсы для гостей</p>
                 </div>
                 <div className="space-y-3 text-wedding-charcoal font-open-sans text-center">
                   <div className="flex items-center justify-center space-x-2">
@@ -348,7 +347,7 @@ const Index = () => {
         <div className="container mx-auto px-6 text-center">
           <Icon name="Heart" size={24} className="mx-auto text-wedding-gold mb-4" />
           <p className="font-cormorant text-xl text-wedding-white mb-2">
-            Диана & Владислав
+            Владислав & Диана
           </p>
           <p className="font-open-sans text-wedding-white/70 text-sm">
             17 Октября 2025 • С любовью для наших дорогих гостей
