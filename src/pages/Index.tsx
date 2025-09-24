@@ -119,38 +119,118 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-cormorant text-5xl font-bold text-wedding-charcoal mb-4">
-              Место проведения
+              Места проведения
             </h2>
             <div className="w-24 h-px bg-wedding-gold mx-auto"></div>
           </div>
 
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/files/560bb763-0e9d-41da-a31f-02d5545a4557.jpg" 
-                alt="Wedding venue" 
-                className="w-full h-64 object-cover rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <h3 className="font-cormorant text-3xl font-semibold text-wedding-charcoal mb-4">
-                Ресторан "Лотос"
-              </h3>
-              <div className="space-y-3 text-wedding-charcoal font-open-sans">
-                <div className="flex items-center space-x-3">
-                  <Icon name="MapPin" size={20} className="text-wedding-gold" />
-                  <span>ул. Матросова, 216</span>
+          {/* Ceremony and Reception Venues */}
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 mb-16">
+            {/* Registry Office */}
+            <Card className="bg-wedding-white border-wedding-gold/30">
+              <CardContent className="p-6">
+                <div className="text-center mb-4">
+                  <Icon name="Heart" size={32} className="mx-auto text-wedding-gold mb-2" />
+                  <h3 className="font-cormorant text-2xl font-semibold text-wedding-charcoal">
+                    ЗАГС
+                  </h3>
+                  <p className="font-open-sans text-sm text-wedding-charcoal/70">14:30 - Церемония бракосочетания</p>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Phone" size={20} className="text-wedding-gold" />
-                  <span>+7 (495) 123-45-67</span>
+                <div className="space-y-3 text-wedding-charcoal font-open-sans text-center">
+                  <div className="flex items-center justify-center space-x-2">
+                    <Icon name="MapPin" size={16} className="text-wedding-gold" />
+                    <span className="text-sm">ул. Сухэ-Батора, 13</span>
+                  </div>
+                  <Button size="sm" className="bg-wedding-gold/10 hover:bg-wedding-gold/20 text-wedding-charcoal border border-wedding-gold/30">
+                    <Icon name="Navigation" size={14} className="mr-1" />
+                    Открыть в картах
+                  </Button>
                 </div>
-              </div>
-              <Button className="mt-6 bg-wedding-gold hover:bg-wedding-gold/90 text-wedding-white font-open-sans">
-                <Icon name="Map" size={16} className="mr-2" />
-                Построить маршрут
-              </Button>
-            </div>
+              </CardContent>
+            </Card>
+
+            {/* Restaurant */}
+            <Card className="bg-wedding-white border-wedding-gold/30">
+              <CardContent className="p-6">
+                <div className="text-center mb-4">
+                  <Icon name="Utensils" size={32} className="mx-auto text-wedding-gold mb-2" />
+                  <h3 className="font-cormorant text-2xl font-semibold text-wedding-charcoal">
+                    Ресторан "Лотос"
+                  </h3>
+                  <p className="font-open-sans text-sm text-wedding-charcoal/70">17:00 - Праздничный банкет</p>
+                </div>
+                <div className="space-y-3 text-wedding-charcoal font-open-sans text-center">
+                  <div className="flex items-center justify-center space-x-2">
+                    <Icon name="MapPin" size={16} className="text-wedding-gold" />
+                    <span className="text-sm">ул. Матросова, 216</span>
+                  </div>
+                  <div className="flex items-center justify-center space-x-2">
+                    <Icon name="Phone" size={16} className="text-wedding-gold" />
+                    <span className="text-sm">+7 (495) 123-45-67</span>
+                  </div>
+                  <Button size="sm" className="bg-wedding-gold/10 hover:bg-wedding-gold/20 text-wedding-charcoal border border-wedding-gold/30">
+                    <Icon name="Navigation" size={14} className="mr-1" />
+                    Открыть в картах
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Restaurant Photo */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <img 
+              src="https://cdn.poehali.dev/files/560bb763-0e9d-41da-a31f-02d5545a4557.jpg" 
+              alt="Wedding venue" 
+              className="w-full h-80 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+
+          {/* Transportation Info */}
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-wedding-white/80 border-wedding-gold/30">
+              <CardContent className="p-8">
+                <div className="text-center mb-6">
+                  <Icon name="Car" size={32} className="mx-auto text-wedding-gold mb-2" />
+                  <h3 className="font-cormorant text-2xl font-semibold text-wedding-charcoal">
+                    Как добраться
+                  </h3>
+                </div>
+                
+                <div className="grid md:grid-cols-3 gap-6 text-center">
+                  <div className="space-y-2">
+                    <Icon name="Clock" size={24} className="mx-auto text-wedding-gold" />
+                    <h4 className="font-open-sans font-semibold text-wedding-charcoal">Время в пути</h4>
+                    <p className="font-open-sans text-sm text-wedding-charcoal/70">
+                      От ЗАГСа до ресторана<br />≈ 15 минут на автомобиле
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <Icon name="ParkingCircle" size={24} className="mx-auto text-wedding-gold" />
+                    <h4 className="font-open-sans font-semibold text-wedding-charcoal">Парковка</h4>
+                    <p className="font-open-sans text-sm text-wedding-charcoal/70">
+                      Бесплатная парковка<br />рядом с рестораном
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <Icon name="Users" size={24} className="mx-auto text-wedding-gold" />
+                    <h4 className="font-open-sans font-semibold text-wedding-charcoal">Трансфер</h4>
+                    <p className="font-open-sans text-sm text-wedding-charcoal/70">
+                      Организуем совместную<br />поездку для гостей
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-6 text-center">
+                  <Button className="bg-wedding-gold hover:bg-wedding-gold/90 text-wedding-white font-open-sans">
+                    <Icon name="Route" size={16} className="mr-2" />
+                    Построить маршрут в Яндекс.Картах
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
