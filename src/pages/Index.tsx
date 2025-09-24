@@ -54,14 +54,20 @@ const Index = () => {
             самый важный день в нашей жизни
           </p>
           
-          <div className="bg-wedding-white/80 backdrop-blur-sm rounded-lg p-8 max-w-md mx-auto border border-wedding-gold/30">
+          <div className="bg-wedding-white/80 backdrop-blur-sm rounded-lg p-8 max-w-lg mx-auto border border-wedding-gold/30">
             <Icon name="Calendar" size={32} className="mx-auto text-wedding-gold mb-4" />
             <p className="font-cormorant text-3xl font-semibold text-wedding-charcoal mb-2">
               17 Октября 2025
             </p>
-            <p className="font-open-sans text-wedding-charcoal">
+            <p className="font-open-sans text-wedding-charcoal mb-4">
               Пятница, 14:30
             </p>
+            <div className="border-t border-wedding-gold/20 pt-4">
+              <Icon name="MapPin" size={20} className="mx-auto text-wedding-gold mb-2" />
+              <p className="font-open-sans text-sm text-wedding-charcoal/90">
+                Роспись: ул. Сухэ-Батора, 13
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -133,7 +139,7 @@ const Index = () => {
               <div className="space-y-3 text-wedding-charcoal font-open-sans">
                 <div className="flex items-center space-x-3">
                   <Icon name="MapPin" size={20} className="text-wedding-gold" />
-                  <span>ул. Сухэ-Батора, 13</span>
+                  <span>ул. Матросова, 216</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Phone" size={20} className="text-wedding-gold" />
